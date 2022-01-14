@@ -15,3 +15,64 @@ body{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+/* nav bar starts here */
+header{
+    padding: 50px 120px;   
+    background-color: rgba(7, 204, 253, 0.801);    
+}
+.menubar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.menu-title{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+.menu-right > ul {
+    display: flex;
+
+}
+.menu-right> ul >li{
+    list-style: none;
+    padding-left: 20px;    
+}
+.menu-right> ul >li a{
+    text-decoration: none;
+    color: white;   
+}
+/* nav bar ends here */
+/* top banner starts here */
+.top-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0 80px; 
+    margin-top: 20px;   
+    
+}
+
+.banner-info{
+    background-color: thistle;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.banner-info:hover{
+    background-color: rgba(255, 152, 255, 0.904);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 31, 46, 0.932);
+}
+.banner-thumbnail img{
+    width: 440px;
+    height: 414px;
+    border-radius: 10px;
+    transition: 0.4s transform;
+}
+.banner-thumbnail img:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px rgba(0, 31, 46, 0.932);
+}
+/* top banner ends here */
