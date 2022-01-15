@@ -1,11 +1,6 @@
 /* common codes and utilities starts here */
 /* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat&family=Poppins&family=Roboto&display=swap');
-/* font famillys:
-font-family: 'Italianno', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +10,13 @@ body{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 span{
     color: deepskyblue;
@@ -47,8 +49,7 @@ span{
     justify-content: flex-start;
     color: white;
     width: 150px;
-    height: 50px;
-    /* background-image: linear-gradient(tomato,red); */
+    height: 50px;    
     background-color: #000000; 
     padding: 0 18px;
     border-radius: 50px;
@@ -92,14 +93,15 @@ header{
 /* nav bar ends here */
 /* top banner starts here */
 .top-banner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;    
     align-items: center;
     justify-items: center;
-    padding: 0 80px; 
+    justify-content: space-between;
+    padding: 0 60px; 
     margin: 50px 0;  
 }
 .banner-info{
+    width: 45%;
     background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
@@ -121,6 +123,9 @@ header{
     background-color: rgba(0, 204, 255, 0.904);
     transform: scale(1.05);
     box-shadow: 2px 2px 40px rgba(0, 31, 46, 0.932);
+}
+.banner-thumbnail{
+    width: 45%;
 }
 .banner-thumbnail img{
     width: 493px;
@@ -160,7 +165,7 @@ header{
 .gadgets{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-gap: 25px;
     padding: 30px;
 }
 .gadget{
@@ -210,11 +215,12 @@ header{
     margin-top: 50px;        
 }
 .feature{    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;    
     align-items: center;
     justify-items: center;
-    padding: 30px;
+    justify-content: space-between;
+    padding: 0 60px; 
+    margin: 50px 0;
 }
 
 .feature-thumbnail > img{
@@ -222,6 +228,12 @@ header{
     height: 270px;
     border-radius: 10px;
     box-shadow: 0px 0px 40px rgba(8, 0, 8, 0.644);
+}
+.feature-thumbnail{
+    width: 45%;
+}
+.features-description{
+    width: 45%;
 }
 .features-description > h3{
     font-size: 38px;
@@ -260,3 +272,51 @@ header{
     font-size: 20px;
 }
 /* footer ends here */
+/* responsive design starts here */
+/* Mobile Devices starts here */
+@media only screen and (max-width: 688px) { 
+    .menubar{
+        flex-direction: column;
+    }      
+    .menu-right{
+        display: none;
+    }
+    .top-banner, .company, .feature{
+        flex-direction: column; 
+        align-items: center;       
+    }
+    .banner-info,.banner-thumbnail{
+        width:100%; 
+    }
+    .banner-info{
+        margin-bottom: 30px;
+    }
+    .gadgets{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+}    
+/* Moblie Devices starts here */
+/* Tablet Devices starts here */
+@media only screen and (min-width: 688px) and (max-width: 992px) { 
+    .menubar{
+        flex-direction: column;
+    }      
+    .menu-right{
+        display: none;
+    }
+    .top-banner, .company, .feature{
+        flex-direction: column; 
+        align-items: center;       
+    }
+    .banner-info,.banner-thumbnail{
+        width:100%; 
+    }
+    .banner-info{
+        margin-bottom: 30px;
+    }
+    .gadgets{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Tablet Devices ends here */
+/* responsive design ends here */
