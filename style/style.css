@@ -1,4 +1,4 @@
-/* common codes and utilities */
+/* common codes and utilities starts here */
 /* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat&family=Poppins&family=Roboto&display=swap');
 /* font famillys:
@@ -14,11 +14,44 @@ font-family: 'Roboto', sans-serif; */
 body{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
+span{
+    color: deepskyblue;
+}
+.section-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title{
+    color: #000000;
+    font-weight: 500;
+    font-size: 30px;    
+}
+.dotted-hr{
+    margin: 20px 0;
+    border: 5px dotted rgb(138, 0, 192);
+    border-bottom: none ;
+    width: 29%;    
+}
+.bottom-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+}
+.bottom-button,.fa-arrow-right{
+    margin-left: 15px;
+    color: #E02C6DDE;
+}
+.button-left{
+    
+}
+/* common codes and utilities ends here*/
 /* nav bar starts here */
 header{
     padding: 50px 120px;   
-    background-color: rgba(7, 204, 253, 0.801);    
+    background-color: rgb(17, 169, 207);    
 }
 .menubar{
     display: flex;
@@ -28,7 +61,7 @@ header{
 .menu-title{
     color: white;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 24px;    
 }
 .menu-right > ul {
     display: flex;
@@ -42,6 +75,9 @@ header{
     text-decoration: none;
     color: white;   
 }
+.fa-shopping-cart, .fa-search{
+    font-size: 20px;
+}
 /* nav bar ends here */
 /* top banner starts here */
 .top-banner{
@@ -50,20 +86,30 @@ header{
     align-items: center;
     justify-items: center;
     padding: 0 80px; 
-    margin-top: 20px;   
+    margin: 50px 0;   
     
 }
-
 .banner-info{
-    background-color: thistle;
+    background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
     transition: 0.4s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.644)
+}
+.banner-info > p{
+    text-align: justify;
+}
+.banner-title{
+    color: #04020f;
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 10px;
 }
 .banner-info:hover{
-    background-color: rgba(255, 152, 255, 0.904);
+    color: white;
+    background-color: rgba(0, 204, 255, 0.904);
     transform: scale(1.05);
-    box-shadow: 2px 2px 15px rgba(0, 31, 46, 0.932);
+    box-shadow: 2px 2px 40px rgba(0, 31, 46, 0.932);
 }
 .banner-thumbnail img{
     width: 440px;
@@ -73,6 +119,114 @@ header{
 }
 .banner-thumbnail img:hover{
     transform: scale(1.05);
-    box-shadow: 2px 2px 15px rgba(0, 31, 46, 0.932);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.932);
 }
 /* top banner ends here */
+/* gadget collections starts here */
+.gadget-collections{
+    margin-top: 50px;
+}
+.gadgets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 30px;
+}
+.gadget{
+    width: 330px;
+    height: 476px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 40px rgba(0, 119, 255, 0.644);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.gadget-info{
+    margin-top: 15px;
+}
+.gadget-name{
+    font-size: 22px;
+    color: #18191F;
+}
+.gadget-price{
+    font-size: 20px;
+    font-weight: 400;
+}
+.gadget-thumbnail{
+    width: 300px;
+    height: 256px;
+}
+.gadget-rating{
+    display: flex;
+    align-items: center;
+}
+.gadget-rating > p{
+    padding-left: 8px;
+}
+.fa-star, .fa-star-half-alt{
+    color: rgb(255, 0, 179);
+}
+.empty{
+    color: #AEAEAE;
+
+}
+.gadget-avilability{
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* gadget collections ends here */
+/* Feartures starts here */
+.gadgets-feature{
+    margin-top: 50px;        
+}
+.feature{    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.feature-thumbnail > img{
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 119, 255, 0.644);
+}
+.features-description > h3{
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.features-description > p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.features-description > a{
+    text-decoration: none;    
+}
+/* Feartures ends here */
+/* footer starts here */
+.gadget-footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 30px;    
+}
+.footer-info > h3{
+    font-size: 24px;
+    font-weight: 400;    
+}
+.footer-info > p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.footer-icons{
+    color: rgb(32, 204, 204);
+    margin-top: 10px;
+}
+.footer-icons > i{
+    padding: 5px;
+    font-size: 20px;
+}
+/* footer ends here */
