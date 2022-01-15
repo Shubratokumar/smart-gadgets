@@ -35,17 +35,28 @@ span{
     border-bottom: none ;
     width: 29%;    
 }
-.bottom-button{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;    
+.button-right,.fa-arrow-right{    
+    color: #E02C6DDE;     
 }
-.bottom-button,.fa-arrow-right{
+.fa-arrow-right{
     margin-left: 15px;
-    color: #E02C6DDE;
 }
 .button-left{
-    
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    color: white;
+    width: 150px;
+    height: 50px;
+    /* background-image: linear-gradient(tomato,red); */
+    background-color: #000000; 
+    padding: 0 18px;
+    border-radius: 50px;
+}
+.button-right{
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
 }
 /* common codes and utilities ends here*/
 /* nav bar starts here */
@@ -86,8 +97,7 @@ header{
     align-items: center;
     justify-items: center;
     padding: 0 80px; 
-    margin: 50px 0;   
-    
+    margin: 50px 0;  
 }
 .banner-info{
     background-color: rgb(255, 255, 255);
@@ -98,6 +108,7 @@ header{
 }
 .banner-info > p{
     text-align: justify;
+    padding-bottom: 10px;
 }
 .banner-title{
     color: #04020f;
@@ -112,8 +123,8 @@ header{
     box-shadow: 2px 2px 40px rgba(0, 31, 46, 0.932);
 }
 .banner-thumbnail img{
-    width: 440px;
-    height: 414px;
+    width: 493px;
+    height: 453px;
     border-radius: 10px;
     transition: 0.4s transform;
 }
@@ -122,6 +133,26 @@ header{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.932);
 }
 /* top banner ends here */
+/* companies starts here */
+.companies{
+    padding: 20px;
+    
+}
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: rgba(190, 197, 196, 0.342);
+}
+.company-logo{
+    padding: 15px;
+}
+.companies-hr{
+    border: 2px solid rgba(2, 0, 85, 0.966);
+    border-bottom: none;
+}
+/* companies ends here */
 /* gadget collections starts here */
 .gadget-collections{
     margin-top: 50px;
@@ -168,7 +199,6 @@ header{
 }
 .empty{
     color: #AEAEAE;
-
 }
 .gadget-avilability{
     margin-top: 10px;
@@ -191,7 +221,7 @@ header{
     width: 400px;
     height: 270px;
     border-radius: 10px;
-    box-shadow: 0px 0px 40px rgba(0, 119, 255, 0.644);
+    box-shadow: 0px 0px 40px rgba(8, 0, 8, 0.644);
 }
 .features-description > h3{
     font-size: 38px;
